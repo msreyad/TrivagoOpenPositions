@@ -35,24 +35,25 @@ public class TrivagoScenarios extends BaseTest {
 		Assert.assertTrue(IsApplyButtonHere);
 
 		try{
-			Assert.assertTrue(Whatyoulldo.contains("> b"));
+			Assert.assertEquals(Whatyoulldo , "b");
 			}
 		catch (Throwable t){
 			 System.out.println("(What you’ll do) doesn't has <b> tag, it as <strong>");
 			 }
 
 		try{
-			Assert.assertTrue(definitelyNeed.contains("> b"));
+			Assert.assertEquals(definitelyNeed, "b");
 			}
 		catch (Throwable t){
 			 System.out.println("(What you’ll definitely need) doesn't has <b> tag, it as <strong>");
 			 }
 		
 		try{
-			Assert.assertTrue(loveYouToHave.contains("> b"));
+			Assert.assertEquals(loveYouToHave, "b");
 			}
 		catch (Throwable t){
 			 System.out.println("(What we’d love you to have ) doesn't has <b> tag, it as <strong>");
 			 }
 }
 }
+
