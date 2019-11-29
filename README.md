@@ -28,11 +28,11 @@ In order to utilise this project you need to have the following installed locall
 * Chrome browser
 * Java 1.8
 
-Usage
+* Usage
 you need to install TestNG in Eclipse if not install yet
 https://www.ecanarys.com/Blogs/ArticleID/169/How-to-Install-TestNG-framework-Step-by-Step-installation-process
 then 
-navigate to TrivagoOpenPositions directory and run as:  TestNG test
+* navigate to com.trivago.tests.TrivagoScenarios class under scr/test/java  directory and run as:  TestNG test
 
 
 
