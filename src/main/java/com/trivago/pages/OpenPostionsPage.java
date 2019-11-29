@@ -70,10 +70,11 @@ public class OpenPostionsPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#content > section.maxwidth.maxwidth--screen.common-page.sub-page-head > div > div > div > h1")));
 		WebElement apply=driver.findElement(By.cssSelector("#content > section.maxwidth.maxwidth--screen.common-page.sub-page-head > div > div > div > h1"));
 		String text = apply.getText();
+		String tag = apply.getTagName();
+
 		
-		
-		System.out.println("job title is :  " + text+" and it has <h1> tag");
-		Log.info("job title is :  " + text+" and it has <h1> tag");
+		System.out.println("job title is :  " + text+" and it has " + tag+" tag");
+		Log.info("job title is :  " + text+" and it has " + tag+" tag");
 		 
 		Log.info("                         End of 3.2 task                       ");
 		Log.info("*************************************************************");
