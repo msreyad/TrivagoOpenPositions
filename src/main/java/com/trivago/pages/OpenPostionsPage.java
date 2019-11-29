@@ -194,17 +194,18 @@ public class OpenPostionsPage {
 		String hasBTag = "#content > section.content.maxwidth.maxwidth--screen.careers > div > div > div.col.g-1of1.g1-2of3.g2-1of2.p_cell.margin--none.margin-top-32 > h3:nth-child(6) > strong";
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(hasBTag)));
 		WebElement apply=driver.findElement(By.cssSelector(hasBTag));
+		String tag = apply.getTagName();
 		String text = apply.getText();
-		
+
 	    Boolean isBTagHere =	hasBTag.contains("> b");
 		
-		System.out.println("(" +text+")"+" and it has <b> tag " + isBTagHere);
-		Log.info("(" +text+")"+" and it has <b> tag " + isBTagHere);
+		System.out.println("(" +text+")"+" and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
+		Log.info("(" +text+")"+" and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
 		 
 		Log.info("                         End of 3.8 task                       ");
 		Log.info("*************************************************************");
 
-		 return hasBTag;
+		 return tag;
 
 	}
 	
@@ -218,17 +219,19 @@ public class OpenPostionsPage {
 		String hasBTag = "#content > section.content.maxwidth.maxwidth--screen.careers > div > div > div.col.g-1of1.g1-2of3.g2-1of2.p_cell.margin--none.margin-top-32 > h3:nth-child(8) > strong";
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(hasBTag)));
 		WebElement apply=driver.findElement(By.cssSelector(hasBTag));
+		
+		String tag = apply.getTagName();
 		String text = apply.getText();
+
+	    Boolean isBTagHere =	hasBTag.contains("> b");
 		
-         Boolean isBTagHere =	hasBTag.contains("> b");
-		
-		System.out.println("(What you’ll definitely need) and it has <b> tag " + isBTagHere);
-		Log.info("(What you’ll definitely need) and it has <b> tag " + isBTagHere);
-		 
+		System.out.println("(What you’ll definitely need) and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
+		Log.info("(What you’ll definitely need) and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
+		 		 
 		Log.info("                         End of 3.9 task                       ");
 		Log.info("*************************************************************");
 
-		 return hasBTag;
+		 return tag;
 
 	}
 	
@@ -242,17 +245,19 @@ public class OpenPostionsPage {
 		String hasBTag = "#content > section.content.maxwidth.maxwidth--screen.careers > div > div > div.col.g-1of1.g1-2of3.g2-1of2.p_cell.margin--none.margin-top-32 > h3:nth-child(10) > strong";
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(hasBTag)));
 		WebElement apply=driver.findElement(By.cssSelector(hasBTag));
+		String tag = apply.getTagName();
 		String text = apply.getText();
+
+	    Boolean isBTagHere =	hasBTag.contains("> b");
 		
-         Boolean isBTagHere =	hasBTag.contains("> b");
-		
-		System.out.println("(" +text+")"+" and it has <b> tag " + isBTagHere);
-		Log.info("(" +text+")"+" and it has <b> tag " + isBTagHere);
+		System.out.println("(" +text+")"+" and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
+		Log.info("(" +text+")"+" and it has <b> tag (" + isBTagHere+ ") it has " +tag + " tag" );
+		 
 		 
 		Log.info("                         End of 3.10 task                       ");
 		Log.info("*************************************************************");
 
-		 return hasBTag;
+		 return tag;
 
 	}
 }
