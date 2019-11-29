@@ -15,7 +15,7 @@ Description of project files :
 Resources and .exe files:
 1. Seleniumdrivers:This folder contains the chromedriver.exe..and IEDriverServer.exe
 2. Conf - This folder contains the property files .
-a.application.properties�- Contains properties to run scripts on specific URL and specific browser.
+a.application.properties - Contains properties to run scripts on specific URL and specific browser.
 
 Tools:
 1- Maven
@@ -37,7 +37,7 @@ navigate to TrivagoOpenPositions directory and run as:  TestNG test
 
 
 Reporting
-Reports  are written into /test-output ==> Default suite ==> Default test.html after a successful run.
-Logs written into Log results with all expected rsults
-expected results also has been insetred in the Console
+* Reports  are written into test-output - Default suite - Default test.html after a successful run.
+* Logs written into Log results with all expected rsults.
+* expected results also has been insetred in the Console.
 
