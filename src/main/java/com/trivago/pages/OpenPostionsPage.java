@@ -56,9 +56,19 @@ public class OpenPostionsPage {
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"list-jobs\"]")));
 		WebElement allURLs=driver.findElement(By.xpath("//*[@id=\"list-mobile\"]/tbody"));
-		
+		String jobURL = null;
+		Boolean e = false;
+
         List<WebElement> getJObs = allURLs.findElements(By.className("list-jobs-wd"));
-		String jobURL = getJObs.get(0).getAttribute("onclick");
+        for (int i=0; i<getJObs.size();i++){
+    		 e = getJObs.get(i).getAttribute("onclick").toString().contains("window.location = 'https://company.trivago.com/jobs/r4540460002");
+    		 jobURL = getJObs.get(i).getAttribute("onclick");
+    		 if (e)
+    		 {
+    			 break;
+    		 }
+
+        }
 		String jobURLAfterAmendment = jobURL.substring(19);
 		System.out.println("jobURL is :  " + jobURLAfterAmendment);
 
